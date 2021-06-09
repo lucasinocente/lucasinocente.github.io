@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Avatar from '../components/Avatar'
-import Categories from '../components/Categories'
+import Card from '../components/Card'
+import Columns from '../components/Columns'
+import Column from '../components/Column'
 
 export default function Home() {
   return (
@@ -9,74 +11,126 @@ export default function Home() {
       <Head>
         <title>Lucas Inocente - Comunicação, simplicidade, feedback, coragem e respeito.</title>
       </Head>
-
       <main>
-        <div className="section">
-          <div className="avatar">
-            <Avatar
-              width={233}
-              height={233}
-            />
-          </div>
-          <h1>
-            <span>Oi, 👋 </span>
-            <span>eu sou o </span>
-            <span>Lucas Inocente</span>
-          </h1>
+        <div className="home">
+          <Columns>
+            <Column>
+             <div className="avatar-desktop">
+                <Avatar
+                  width={377}
+                  height={377}
+                />
+              </div>
+              <div className="avatar-mobile">
+                <Avatar
+                  width={233}
+                  height={233}
+                />
+              </div>
+            </Column>
+            <Column>
+              <div>
+                <h1>
+                  Hi, <span className="animate">👋</span> <br/>
+                  my name is <br/>
+                  Lucas Inocente</h1>
+                <h2>And I'm a Tech Lead, Software Developer, Writer, Community Manager, Startup Mentor, Host and Podcast Producer.</h2>
+              </div>
+            </Column>
+          </Columns>
         </div>
         <div className="section">
+          <h2>That's the projects I've been working on:</h2>
+          <Card
+            href="https://empresaminimaviavel.com.br"
+            label="Podcast Host"
+            title="Empresa Mínima Viável"
+            subTitle="w/ Daniel Wildt and Gui Grazziotin"
+          />
+          <Card
+            href="https://open.spotify.com/show/4FsGkUv2kanmTA1CFlpCYJ"
+            label="Podcast Host"
+            title="Sabe de Nada, Inocente!"
+            subTitle=""
+          />
+          <Card
+            href="https://leanpub.com/dvap/"
+            label="Writer"
+            title="Da Visão à Produção"
+            subTitle="w/ Daniel Wildt"
+          />
+          <Card
+            href="https://apoia.se"
+            label="Tech Lead, Software Developer and Agile Coach"
+            title="APOIA.se"
+          />
+          <Card
+            href="https://www.rituscompany.com.br/"
+            label="Mentor"
+            title="Ritus Company"
+          />
+          <Card
+            href="https://www.meetup.com/meetup-nodejs-porto-alegre/"
+            label="Community Manager and Producer"
+            title="Meetup Node.js Porto Alegre"
+            subTitle="w/ Aline Escobar, Henrique Schreiner and Mathias Gheno"
+          />
+          <Card
+            href="https://lucasinocente.com/blog"
+            label="Writer"
+            title="Blog"
+          />
+
+          <br/>
+
           <p>
-            Aqui tu podes saber {` `}
-            <Link href="/paginas/sobre">sobre mim</Link>,{` `}
-             ver as lives e verbetes que produzi para o livro{` `}
-            <Link href="/dvap">Da Visão à Produção</Link> e
-            ler os textos que escrevo para o{` `}
-            <Link href="/blog">blog</Link>.</p>
+            <Link href="https://www.linkedin.com/in/lucasinocente/">Linkedin</Link> - <Link href="mailto:olucassanchez@gmail.com">Get in touch</Link>
+          </p>
         </div>
       </main>
 
       <style jsx>{`
+        .home {
+          min-height: 610px;
+          display: flex;
+        }
+
+        .home  > div {
+          width: 100%;
+        }
+
         main {
           padding: 55px;
           max-width: 987px;
           margin: 0 auto;
         }
 
-        .section {
-          display: flex;
-          align-items: center;
-        }
-
-        .avatar {
-          margin-right: 55px;
-          display: flex;
-          justify-content: center;
-        }
-
-        h1 span {
-          display: block;
-        }
-
         p {
           font-size: 21px;
-          line-height: 1.8;
           width: 100%;
           word-break: break-word;
-          font-weight: 600; // 610
+          font-weight: bold;
+          text-align: center;
         }
 
-        @media (max-width: 610px) {
-          .avatar {
-            margin-right: 0px;
-            text-align: center;
-          }
-          h1 span {
-            display: inline;
-          }
+        .avatar-desktop {
+          display: block;
+        }
+        .avatar-mobile {
+          display: none;
+        }
+
+        @media (max-width: 910px) {
           main {
             padding: 34px;
           }
-          .section {
+        }
+
+        @media (max-width: 450px) {
+          .avatar-desktop {
+            display: none;
+          }
+          .avatar-mobile {
             display: block;
           }
         }
