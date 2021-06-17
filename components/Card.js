@@ -2,8 +2,10 @@ import Link from 'next/link'
 
 const Card = (
   {
+    label,
     section,
     title,
+    subTitle,
     link,
     href
   }
@@ -16,9 +18,11 @@ const Card = (
         <Link href={goToLink}>
           <a title={ title }>
             <div className="background">
+              <h4>{ label }</h4>
               <h3>{ title }</h3>
+              <h4>{ subTitle }</h4>
+              {/* <h4>{ link }</h4> */}
             </div>
-            <h4>{ link }</h4>
           </a>
         </Link>
       </div>
@@ -29,11 +33,12 @@ const Card = (
 
         .background {
           display: flex;
-          align-items: flex-end;
-          min-height: 144px;
-          padding: 13px;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
           background-image: linear-gradient(to bottom right, #ffd550, #ffd550);
           border-radius: 5px;
+          min-height: 377px;
         }
 
         h3 {
@@ -42,9 +47,13 @@ const Card = (
           font-weight: normal;
         }
 
+        h3 + h4 {
+          padding: 0px;
+        }
+
         h4 {
           margin: 0px;
-          padding-left: 13px;
+          padding: 0px;
         }
       `}</style>
     </>
