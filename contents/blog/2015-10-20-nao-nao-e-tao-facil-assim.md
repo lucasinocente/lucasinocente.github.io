@@ -21,4 +21,8 @@ Clientes. Dinheiro. Valor. Parcelas. Juros. Aprenda a falar de dinheiro. Tu já 
 
 Ah, mas eu não quero tanto dinheiro assim. Então tu não vai ter mesmo. Ah, mas eu não quero trabalhar tanto assim. Então tu não vai mesmo. Tu só vai ser o que tu quiser ser. Seja agora quem tu quer ser amanhã. E não tenha nenhuma vergonha disso.
 
-E sim, empreender é fazer tudo diferente. Tudo diferente porque as oportunidades são diferentes, as expectativas e os riscos também. Mas isso eu vou deixar pra semana que vem.
+E sim, empreender é fazer tudo diferente. Tudo diferente porque as oportunidades são diferentes, as expectativas e os riscos também.
+
+Atualização e dica - 27 de junho de 2020: não tem problema tu não querer ser milionário e não tem problema tu não querer trabalhar tanto assim. É ok tu querer o mínimo para se manter confortável sem problemas. Mas o papo de precisar saber falar sobre dinheiro e negócios caso tu queira trabalhar nessa área é verdade.
+
+Saber lidar com dinheiro e ser ganâncioso são coisas diferentes e separadas. Tu pode entender como as coisas funcionam e como fazer boas negociações sem precisar ser um idiota.
