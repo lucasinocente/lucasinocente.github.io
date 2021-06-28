@@ -14,18 +14,13 @@ const Card = (
 
   return (
     <>
-      <div className="card">
+      <li className="card">
         <Link href={goToLink}>
           <a title={ title }>
-            <div className="background">
-              <h4>{ label }</h4>
-              <h3>{ title }</h3>
-              <h4>{ subTitle }</h4>
-              {/* <h4>{ link }</h4> */}
-            </div>
+            { label && (<strong>[{ label }]</strong>) } { title }
           </a>
         </Link>
-      </div>
+      </li>
       <style jsx>{`
         .card {
           margin: 0px 0px 21px;

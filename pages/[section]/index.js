@@ -17,11 +17,13 @@ const Page = (
       </Head>
       <Header section={section}/>
       <article className="inner-container">
-        <div>
+        <h2>Posts:</h2>
+        <ul>
           { data.map(({ link, title }, index ) => {
-            return <Card link={link} title={title} section={section} />
+            const [year, month, day] = link.split('-')
+            return <Card link={link} title={title} section={section} label={`${year}-${month}-${day}`}/>
           })}
-        </div>
+        </ul>
       </article>
     </>
   )

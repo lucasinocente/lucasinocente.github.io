@@ -41,51 +41,65 @@ export default function Home() {
         </div>
         <div className="section">
           <h2>That's the projects I've been working on:</h2>
-          <Card
-            href="https://empresaminimaviavel.com.br"
-            label="Podcast Host"
-            title="Empresa Mínima Viável"
-            subTitle="w/ Daniel Wildt and Gui Grazziotin"
-          />
-          <Card
-            href="https://open.spotify.com/show/4FsGkUv2kanmTA1CFlpCYJ"
-            label="Podcast Host"
-            title="Sabe de Nada, Inocente!"
-            subTitle=""
-          />
-          <Card
-            href="https://leanpub.com/dvap/"
-            label="Writer"
-            title="Da Visão à Produção"
-            subTitle="w/ Daniel Wildt"
-          />
-          <Card
-            href="https://apoia.se"
-            label="Tech Lead, Software Developer and Agile Coach"
-            title="APOIA.se"
-          />
-          <Card
-            href="https://www.rituscompany.com.br/"
-            label="Mentor"
-            title="Ritus Company"
-          />
-          <Card
-            href="https://www.meetup.com/meetup-nodejs-porto-alegre/"
-            label="Community Manager and Producer"
-            title="Meetup Node.js Porto Alegre"
-            subTitle="w/ Aline Escobar, Henrique Schreiner and Mathias Gheno"
-          />
-          <Card
-            href="https://lucasinocente.com/blog"
-            label="Writer"
-            title="Blog"
-          />
+          <ul>
+            <Card
+              href="https://empresaminimaviavel.com.br"
+              label="Podcast Host"
+              title="Empresa Mínima Viável"
+              subTitle="w/ Daniel Wildt and Gui Grazziotin"
+            />
+            <Card
+              href="https://open.spotify.com/show/4FsGkUv2kanmTA1CFlpCYJ"
+              label="Podcast Host"
+              title="Sabe de Nada, Inocente!"
+              subTitle=""
+            />
+            <Card
+              href="https://leanpub.com/dvap/"
+              label="Writer"
+              title="Da Visão à Produção"
+              subTitle="w/ Daniel Wildt"
+            />
+            <Card
+              href="https://apoia.se"
+              label="Tech Lead, Software Developer and Agile Coach"
+              title="APOIA.se"
+            />
+            <Card
+              href="https://www.rituscompany.com.br/"
+              label="Mentor"
+              title="Ritus Company"
+            />
+            <Card
+              href="https://www.meetup.com/meetup-nodejs-porto-alegre/"
+              label="Community Manager and Producer"
+              title="Meetup Node.js Porto Alegre"
+              subTitle="w/ Aline Escobar, Henrique Schreiner and Mathias Gheno"
+            />
+            <Card
+              href="https://lucasinocente.com/blog"
+              label="Writer"
+              title="Blog"
+            />
+          </ul>
 
           <br/>
 
-          <p>
-            <Link href="https://www.linkedin.com/in/lucasinocente/">Linkedin</Link> - <Link href="mailto:olucassanchez@gmail.com">Get in touch</Link>
-          </p>
+          <div className="section">
+            <h2>Get in touch:</h2>
+            <ul>
+              <Card
+                href="https://www.linkedin.com/in/lucasinocente/"
+                label=""
+                title="Linkedin"
+              />
+              <Card
+                href="mailto:olucassanchez@gmail.com/"
+                label=""
+                title="E-mail"
+              />
+            </ul>
+          </div>
         </div>
       </main>
 

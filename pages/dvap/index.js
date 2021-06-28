@@ -27,28 +27,30 @@ const Page = (
       </div>
       <article className="inner-container">
         <h2>Live streams:</h2>
-        <div>
+        <ul>
           { lives.map(({ link, title, section }) => (
               <Card
                 title={title}
                 section={section}
                 link={section}
                 href={link}
+                label='Live'
               />
             ))
           }
-        </div>
+        </ul>
         <h2>Verbetes:</h2>
-        <div>
+        <ul>
           { data.map(({ link, title }) => (
               <Card
                 link={link}
                 title={title}
                 section={section}
+                label='Artigo'
               />
             ))
           }
-        </div>
+        </ul>
       </article>
 
       <style jsx>{`
