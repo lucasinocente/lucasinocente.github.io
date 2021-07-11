@@ -34,24 +34,24 @@ export default function Home() {
                   Hi, <span className="animate">👋</span> <br/>
                   my name is <br/>
                   Lucas Inocente</h1>
-                <h2>And I'm a Tech Lead, Software Developer, Writer, Community Manager, Startup Mentor, Host and Podcast Producer.</h2>
+                <h2>And I'm a Developer, Agilist, Writer, Cyclist, Host and Producer.</h2>
               </div>
             </Column>
           </Columns>
         </div>
         <div className="section">
-          <h2>That's the projects I've been working on:</h2>
+          <h2>Current projects:</h2>
           <ul>
             <Card
               href="https://empresaminimaviavel.com.br"
-              label="Podcast Host"
-              title="Empresa Mínima Viável"
+              label="Producer and Host"
+              title="Podcast Empresa Mínima Viável"
               subTitle="w/ Daniel Wildt and Gui Grazziotin"
             />
             <Card
               href="https://open.spotify.com/show/4FsGkUv2kanmTA1CFlpCYJ"
-              label="Podcast Host"
-              title="Sabe de Nada, Inocente!"
+              label="Director, Producer and Host"
+              title="Podcast Sabe de Nada, Inocente!"
               subTitle=""
             />
             <Card
@@ -62,7 +62,7 @@ export default function Home() {
             />
             <Card
               href="https://apoia.se"
-              label="Tech Lead, Software Developer and Agile Coach"
+              label="Tech Lead, Software Engineer and Agilist"
               title="APOIA.se"
             />
             <Card
@@ -80,6 +80,57 @@ export default function Home() {
               href="https://lucasinocente.com/blog"
               label="Writer"
               title="Blog"
+            />
+          </ul>
+
+          <br/>
+
+          <h2>Former projects:</h2>
+          <ul>
+            <Card
+              href="https://casomarielleeanderson.org/"
+              label="Software Engineer"
+              title="Caso Marielle e Anderson 2020 @ Instituto Marielle Franco"
+            />
+            <Card
+              href="https://www.agendamarielle.com/candidatas"
+              label="Software Developer"
+              title="Agenda Marielle Franco 2020 @ Instituto Marielle Franco"
+            />
+            <Card
+              href="https://www.youtube.com/watch?v=iLo7y4AJ9I0"
+              label="Host and Producer"
+              title="JavaScriptFolia 2021"
+            />
+            <Card
+              href="https://twitter.com/techbeerpoa"
+              label="Host and Producer"
+              title="Tech && Beer 2018, 2019"
+            />
+            <Card
+              href="https://medium.com/@lucasinocente/como-foi-a-hacktoberfest-2018-na-ilegra-185457090785"
+              label="Host and Producer"
+              title="Hacktoberfest Porto Alegre 2018, 2019"
+            />
+            <Card
+              href="https://lotadata.com/"
+              label="Front-End Developer"
+              title="LOTaData 2017"
+            />
+            <Card
+              href="https://www.fightanalytics.cc/"
+              label="Co-founder, CTO, CPO, Software Engineer"
+              title="Fight Analytics 2014 ~ 2018"
+            />
+            <Card
+              href="https://santins.com.br/"
+              label="Co-founder, CEO, Tech Manager, Software Engineer"
+              title="Santins 2012 ~ 2014"
+            />
+            <Card
+              href=""
+              label="Creator"
+              title="Talking Tourist 2012"
             />
           </ul>
 
